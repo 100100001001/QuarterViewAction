@@ -59,7 +59,6 @@ public class Player : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
     }
 
-
     void Update()
     {
         GetInput();
@@ -159,7 +158,7 @@ public class Player : MonoBehaviour
                 Vector3 nextVec = rayHit.point - transform.position;
                 // rayHit.point 레이가 닿았던 지점
 
-                nextVec.y = 2; // RaycastHit의 높이는 무시하도록 Y축 값을 0으로 초기화
+                nextVec.y = 10; // RaycastHit의 높이는 무시하도록 Y축 값을 0으로 초기화
 
                 GameObject instantGrenade = Instantiate(grenadeObj, transform.position, transform.rotation);
                 Rigidbody rigidGrenade = instantGrenade.GetComponent<Rigidbody>();

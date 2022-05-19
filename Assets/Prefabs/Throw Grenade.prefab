@@ -200,6 +200,7 @@ GameObject:
   - component: {fileID: 7168313386459838398}
   - component: {fileID: 5794131353456060269}
   - component: {fileID: 72292070327301215}
+  - component: {fileID: 8128028731009150477}
   m_Layer: 10
   m_Name: Throw Grenade
   m_TagString: Untagged
@@ -252,6 +253,21 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.7
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8128028731009150477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7507825652891774212}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f98f06a48b6183e4690434b1626ea900, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meshObj: {fileID: 6210329309759109435}
+  effectObj: {fileID: 8611998186004686883}
+  rigid: {fileID: 5794131353456060269}
 --- !u!1001 &7039722173020130402
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -325,6 +341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46ffadbb188f9ab498b623c4290ef656, type: 3}
+--- !u!1 &8611998186004686883 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1599315238913598529, guid: 46ffadbb188f9ab498b623c4290ef656, type: 3}
+  m_PrefabInstance: {fileID: 7039722173020130402}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5741640214917452713 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3322664071572938699, guid: 46ffadbb188f9ab498b623c4290ef656, type: 3}
