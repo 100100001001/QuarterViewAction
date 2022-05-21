@@ -25,11 +25,12 @@ public class Grenade : MonoBehaviour
 
 
         // 수류탄 피격
-        RaycastHit[] rayHits = Physics.SphereCastAll(transform.position,
-                                                     15,
-                                                     Vector3.up,
-                                                     0f,
-                                                     LayerMask.GetMask("Enemy"));
+        RaycastHit[] rayHits = 
+            Physics.SphereCastAll(transform.position,
+                                  15,
+                                  Vector3.up,
+                                  0f,
+                                  LayerMask.GetMask("Enemy"));
         // SphereCastAll(시작 위치, 반지름, 쏘는 방향, 레이를 쏘는 길이, 레이어 마스크) : 구체 모양의 레이캐스팅 (모든 오브젝트)
 
         // 수류탄 범위 적들의 피격함수를 호출

@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public int damage;
+    public bool isMelee; 
 
     void OnCollisionEnter(Collision collision)
     {
@@ -17,8 +18,8 @@ public class Bullet : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        // 벽에 닿으면 바로 사라짐
-        if (other.gameObject.tag == "Wall")
+        // 근접공격이 아니고, 벽에 닿으면 바로 사라짐
+        if (!isMelee && other.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
         }
